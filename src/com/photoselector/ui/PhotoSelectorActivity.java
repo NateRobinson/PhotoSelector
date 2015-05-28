@@ -234,7 +234,6 @@ public class PhotoSelectorActivity extends Activity implements onItemClickListen
             if (selected.size() >= 9)
             {
                 Toast.makeText(PhotoSelectorActivity.this, "最多只能9张图...", Toast.LENGTH_SHORT).show();
-                // 告诉
                 photoItem.cancelChecked();
                 return;
             }
@@ -316,9 +315,7 @@ public class PhotoSelectorActivity extends Activity implements onItemClickListen
         @Override
         public void onPhotoLoaded(List<PhotoModel> photos)
         {
-            if (tvAlbum.getText().equals(RECCENT_PHOTO))
-                // photos.add(0, new PhotoModel());
-                photoAdapter.update(photos);
+            photoAdapter.update(photos);
             gvPhotos.smoothScrollToPosition(0); // 滚动到顶端
             reset();
         }
