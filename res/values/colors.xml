@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- app主题颜色 -->
+    <color name="appbgcolor">#e82d86</color>
+</resources>
